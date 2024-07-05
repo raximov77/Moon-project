@@ -1,6 +1,9 @@
+
+
 .site-header {
     padding: 40px 0  0 55px;
-    font-family: 'Barlow' ;
+    margin: 0 auto;
+    max-width: 1385px;
 }
 .space {
     @include display($items:center,$space:space-between,$gap:0);
@@ -20,9 +23,9 @@
         position: absolute;
         top: 0;
         bottom: 0;
-        left: -443px;
+        left: -413px;
         margin: auto 0;
-        width: 473px;
+        width: 443px;
         height: 1px;
         background-color: #383E47;
     }
@@ -31,10 +34,8 @@
 .space__link {
     @include textStyle($FW:400,$FS:16px,$LH:19px,$CASE:uppercase,$MB:0,$CLR:$white-color);
     position: relative;
-    & > span{
-        @include textStyle($FW:700,$FS:16px,$LH:19px,$CASE:uppercase,$MB:0,$CLR:$white-color);
-        margin-right: 11px;
-    }
+    letter-spacing: 2.7px;
+    font-family: 'Barlow Condensed';
     &::before{
         content: "";
         position: absolute;
@@ -58,6 +59,9 @@
     background-image: url(../../images/crew-bg.png);
     background-repeat: no-repeat;
     background-size: 100%;
+}
+.crew-section{
+    padding-top: 76px;
 }
 .crew{
     @include display($items:center,$space:space-between,$gap:81px);
