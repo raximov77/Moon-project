@@ -33,6 +33,7 @@
 .space__link {
     @include textStyle($FW:400,$FS:16px,$LH:19px,$CASE:uppercase,$MB:0,$CLR:$white-color);
     font-family: 'Barlow';/* add */
+    letter-spacing: 2.7px;
     position: relative;
     & > span{
         @include textStyle($FW:700,$FS:16px,$LH:19px,$CASE:uppercase,$MB:0,$CLR:$white-color);

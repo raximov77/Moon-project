@@ -85,6 +85,7 @@ body {
   margin-bottom: 0;
   color: white;
   font-family: "Barlow"; /* add */
+  letter-spacing: 2.7px;
   position: relative;
 }
 .space__link > span {
