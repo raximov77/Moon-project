@@ -1,4 +1,5 @@
 @font-face {
+
   font-family: 'Bellefair';
   src: url('../fonts/Bellefair-Regular.woff2') format('woff2'),
       url('../fonts/Bellefair-Regular.woff') format('woff');
@@ -24,3 +25,9 @@
   font-style: normal;
   font-display: swap;
 }
+    font-display: swap;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/barlow-v12-latin-regular.woff2') format('woff2');
+  }
