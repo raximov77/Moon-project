@@ -1,96 +1,56 @@
-/* .moon-header {
-    padding: 40px 0 76px 0;
-} */
-.moon__header--site-logo{
-    margin-left: 55px;
- }
-.moon__header--content {
-    padding: 40px 0 35px 0;
+.site-header {
+    padding: 40px 0  0 55px;
     margin: 0 auto;
-    @include display($items:center ,$space:start,$gap:507px);
+    max-width: 1385px;
 }
-.moon__header--list {
-    width: 100%;
+.space {
+    @include display($items:center,$space:space-between,$gap:0);
+}
+.space__logo-link {
+    display: inline-block;
+}
+.space__list {
+    position: relative;
+    @include display($items:center,$space:center,$gap:48px);
+    width: 830px;
     padding: 38px 0;
-    position: relative;
-    background-color: #222630;
-    @include display($items:center ,$space:center,$gap:77px);
-        &::before{
-            content: "";
-            width: 473px;
-            height: 1px;
-            background-color: #505159;
-            position: absolute;
-            left: -425px;
-        }
-}
-.moon__header--item:nth-child(1) {
-    margin-left: 52px;
-    position: relative;
-        &::before{
-            content: "00";
-            position: absolute;
-            @include textStyle($FW:700,$FS:16px,$LH:19px,$CASE:uppercase,$MB:0px,$CLR:#FFFFFF);
-            letter-spacing: 2.7px;
-            top: 0;
-            bottom: 0;
-            left: -29px;
-        }
-}
-.moon__header--item:nth-child(2){
-    position: relative;
+    background-color: rgba(255, 255, 255, 0.04);
+    text-align: center;
     &::before{
-        content: "01";
+        content: "";
         position: absolute;
-        @include textStyle($FW:700,$FS:16px,$LH:19px,$CASE:uppercase,$MB:0px,$CLR:#FFFFFF);
-        letter-spacing: 2.7px;
         top: 0;
         bottom: 0;
-        left: -29px;
+        left: -413px;
+        margin: auto 0;
+        width: 443px;
+        height: 1px;
+        background-color: #383E47;
     }
 }
-.moon__header--item:nth-child(3){
+
+.space__link {
+    @include textStyle($FW:400,$FS:16px,$LH:19px,$CASE:uppercase,$MB:0,$CLR:$white-color);
     position: relative;
-    &::before{
-        content: "02";
-        position: absolute;
-        @include textStyle($FW:700,$FS:16px,$LH:19px,$CASE:uppercase,$MB:0px,$CLR:#FFFFFF);
-        letter-spacing: 2.7px;
-        top: 0;
-        bottom: 0;
-        left: -29px;
-    }
-}
-.moon__header--item:nth-child(4){
-    position: relative;
-    &::before{
-        content: "03";
-        position: absolute;
-        @include textStyle($FW:700,$FS:16px,$LH:19px,$CASE:uppercase,$MB:0px,$CLR:#FFFFFF);
-        letter-spacing: 2.7px;
-        top: 0;
-        bottom: 0;
-        left: -29px;
-    }
-}
-.moon__header--link {
-    @include textStyle($FW:400,$FS:16px,$LH:19px,$CASE:uppercase,$MB:64px,$CLR:#FFFFFF);
     letter-spacing: 2.7px;
-    transition: 0.3s all;
-    &:hover{
-        &::after{
-                content: "";
-                width: 100%;
-                height: 3px;
-                position: absolute;
-                background-color: #D0D6F9;
-                top: 54px;
-                bottom:0;
-                right: 0;
-                left: 0;
-        }
+    font-family: 'Barlow Condensed';
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: -38px;
+        background-color: $white-color;
+        transition: all 0.2s linear;
+        opacity: 0;
     }
-}
+    &:hover::before{
+        opacity: 1;
+    }
+    }
+    .moon-section{
+        padding-top: 76px;
+    }
 .moon__wrapper--title {
     margin-left: 39px;
     @include textStyle($FW:400,$FS:28px,$LH:33.6px,$CASE:uppercase,$MB:64px,$CLR:#FFFFFF);

@@ -18,17 +18,6 @@
   font-weight: bold;
   font-style: normal;
   font-display: swap;
-
-  font-weight: 400;
-  src: url("../fonts/barlow-v12-latin-regular.woff2") format("woff2");
-
-}
-@font-face {
-  font-display: swap;
-  font-family: "Bellefair";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/bellefair-v14-latin-regular.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
@@ -89,75 +78,10 @@ body {
   height: 100vh;
 }
 
-/* .moon-header {
-    padding: 40px 0 76px 0;
-} */
-.moon__header--site-logo {
-  margin-left: 55px;
-}
-
-.moon__header--content {
-  padding: 40px 0 35px 0;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  gap: 507px;
-}
-
-.moon__header--list {
-  width: 100%;
-  padding: 38px 0;
-  position: relative;
-  background-color: #222630;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 77px;
-}
-.moon__header--list::before {
-  content: "";
-  width: 473px;
-  height: 1px;
-  background-color: #505159;
-  position: absolute;
-  left: -425px;
-}
-
-.moon__header--item:nth-child(1) {
-  margin-left: 52px;
-  position: relative;
-}
-.moon__header--item:nth-child(1)::before {
-  content: "00";
-  position: absolute;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  text-transform: uppercase;
-  margin-bottom: 0px;
-  color: #FFFFFF;
-  letter-spacing: 2.7px;
-  top: 0;
-  bottom: 0;
-  left: -29px;
-}
-
-.moon__header--item:nth-child(2) {
-  position: relative;
-}
-.moon__header--item:nth-child(2)::before {
-  content: "01";
-  position: absolute;
- }
 .site-header {
   padding: 40px 0 0 55px;
-
-  font-family: "Barlow";
-
   margin: 0 auto;
   max-width: 1385px;
-
 }
 
 .space {
@@ -190,9 +114,6 @@ body {
   left: -413px;
   margin: auto 0;
   width: 443px;
-  left: -443px;
-  margin: auto 0;
-  width: 473px;
   height: 1px;
   background-color: #383E47;
 }
@@ -207,80 +128,166 @@ body {
   position: relative;
   letter-spacing: 2.7px;
   font-family: "Barlow Condensed";
-  font-family: "Barlow"; /* add */
-  letter-spacing: 2.7px;
-
-  position: relative;
 }
-.space__link > span {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  text-transform: uppercase;
-  margin-bottom: 0px;
-  color: #FFFFFF;
-  letter-spacing: 2.7px;
-  top: 0;
-  bottom: 0;
-  left: -29px;
-}
-
-.moon__header--item:nth-child(3) {
-  position: relative;
-}
-.moon__header--item:nth-child(3)::before {
-  content: "02";
+.space__link::before {
+  content: "";
   position: absolute;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  text-transform: uppercase;
-  margin-bottom: 0px;
-  color: #FFFFFF;
-  letter-spacing: 2.7px;
-  top: 0;
-  bottom: 0;
-  left: -29px;
+  width: 100%;
+  height: 3px;
+  bottom: -38px;
+  background-color: white;
+  transition: all 0.2s linear;
+  opacity: 0;
+}
+.space__link:hover::before {
+  opacity: 1;
 }
 
-.moon__header--item:nth-child(4) {
+.space-hero-section {
+  padding-top: 170px;
+}
+
+.space-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+}
+
+.explore__content-wrapper {
+  max-width: 450px;
+}
+
+.explore__text {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  color: #D0D6F9;
+}
+
+.explore__title {
+  font-weight: 400;
+  font-size: 151px;
+  line-height: 171px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  color: white;
+  font-family: "Bellefair";
+}
+
+.explore__btm-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: none;
+  margin-bottom: 0px;
+  color: #D0D6F9;
+}
+
+.explore__bg {
+  width: 274px;
+  height: 274px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: white;
+  display: grid;
+  place-items: center;
   position: relative;
 }
-.moon__header--item:nth-child(4)::before {
-  content: "03";
+.explore__bg::before {
+  content: "";
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
   position: absolute;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  text-transform: uppercase;
-  margin-bottom: 0px;
-  color: #FFFFFF;
-  letter-spacing: 2.7px;
-  top: 0;
-  bottom: 0;
-  left: -29px;
+  background-color: transparent;
+  transition: all 0.3s linear;
+  background-color: rgba(255, 255, 255, 0.09);
+  transform: scale(0.5);
+}
+.explore__bg:hover::before {
+  transform: scale(1);
 }
 
-.moon__header--link {
+.explore__name {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  color: #0B0D17;
+  font-family: "Bellefair";
+}
+
+.site-header {
+  padding: 40px 0 0 55px;
+  margin: 0 auto;
+  max-width: 1385px;
+}
+
+.space {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+}
+
+.space__logo-link {
+  display: inline-block;
+}
+
+.space__list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  width: 830px;
+  padding: 38px 0;
+  background-color: rgba(255, 255, 255, 0.04);
+  text-align: center;
+}
+.space__list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -413px;
+  margin: auto 0;
+  width: 443px;
+  height: 1px;
+  background-color: #383E47;
+}
+
+.space__link {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
-  margin-bottom: 64px;
-  color: #FFFFFF;
+  margin-bottom: 0;
+  color: white;
+  position: relative;
   letter-spacing: 2.7px;
-  transition: 0.3s all;
+  font-family: "Barlow Condensed";
 }
-.moon__header--link:hover::after {
+.space__link::before {
   content: "";
+  position: absolute;
   width: 100%;
   height: 3px;
-  position: absolute;
-  background-color: #D0D6F9;
-  top: 54px;
-  bottom: 0;
-  right: 0;
-  left: 0;
+  bottom: -38px;
+  background-color: white;
+  transition: all 0.2s linear;
+  opacity: 0;
+}
+.space__link:hover::before {
+  opacity: 1;
+}
+
+.moon-section {
+  padding-top: 76px;
 }
 
 .moon__wrapper--title {
@@ -383,9 +390,58 @@ body {
   text-transform: capitalize;
   margin-bottom: 0px;
   color: #FFFFFF;
+}
+
+.site-header {
+  padding: 40px 0 0 55px;
+  margin: 0 auto;
+  max-width: 1385px;
+}
+
+.space {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+}
+
+.space__logo-link {
+  display: inline-block;
+}
+
+.space__list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  width: 830px;
+  padding: 38px 0;
+  background-color: rgba(255, 255, 255, 0.04);
+  text-align: center;
+}
+.space__list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -413px;
+  margin: auto 0;
+  width: 443px;
+  height: 1px;
+  background-color: #383E47;
+}
+
+.space__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
   margin-bottom: 0;
   color: white;
-  margin-right: 11px;
+  position: relative;
+  letter-spacing: 2.7px;
+  font-family: "Barlow Condensed";
 }
 .space__link::before {
   content: "";
@@ -400,11 +456,16 @@ body {
 .space__link:hover::before {
   opacity: 1;
 }
+
 .crew-body {
   background: #0B0D17;
   background-image: url(../../images/crew-bg.png);
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+.crew-section {
+  padding-top: 76px;
 }
 
 .crew {
@@ -424,109 +485,8 @@ body {
   font-family: "Barlow";
   letter-spacing: 4.72px;
 }
-.space-hero-section {
-  padding-top: 170px;
-}
 
-.space-hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0;
-}
-
-.explore__content-wrapper {
-  max-width: 450px;
-}
-
-.explore__text {
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 33px;
-  text-transform: uppercase;
-  margin-bottom: 24px;
-  color: #D0D6F9;
-}
-
-.explore__title {
-  font-weight: 400;
-  font-size: 151px;
-  line-height: 171px;
-  text-transform: uppercase;
-  margin-bottom: 24px;
-  color: white;
-  font-family: "Bellefair";
-}
-
-.explore__btm-text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 32px;
-  text-transform: none;
-  margin-bottom: 0px;
-  color: #D0D6F9;
-}
-
-.explore__bg {
-  width: 274px;
-  height: 274px;
-  cursor: pointer;
-  border-radius: 50%;
-  background-color: white;
-  display: grid;
-  place-items: center;
-  position: relative;
-}
-.explore__bg::before {
-  content: "";
-  width: 450px;
-  height: 450px;
-  border-radius: 50%;
-  position: absolute;
-  background-color: transparent;
-  transition: all 0.3s linear;
-  background-color: rgba(255, 255, 255, 0.09);
-  transform: scale(0.5);
-}
-.explore__bg:hover::before {
-  transform: scale(1);
-}
-
-.explore__name {
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 36px;
-  text-transform: uppercase;
-  margin-bottom: 0px;
-  color: #0B0D17;
-  font-family: "Bellefair";
-}
-
-.technology__hero-section {
-  padding: 76px 0 214px 0;
-  background-image: url(../../images/technology-hero-img.png);
-  background-repeat: no-repeat;
-  background-position: center right;
-}
-
-.technology__hero-title-wrapper {
-  display: flex;
-  gap: 24px;
-  align-items: center;
-}
-
-.technology__hero-title-number {
-  opacity: 0.25;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 34px;
-  text-transform: uppercase;
-  margin-bottom: 0;
-  color: white;
-  font-family: "Barlow";
-}
-
-.technology__hero-title {
+.crew__title span {
   font-weight: 700;
   font-size: 28px;
   line-height: 34px;
@@ -578,6 +538,110 @@ body {
 .crew__img-wrapper {
   margin-top: 20px;
   margin-left: 137px;
+}
+
+.technology-body {
+  background-image: url(../../images/technology-hero-bg-img.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.site-header {
+  padding: 40px 0 0 55px;
+  margin: 0 auto;
+  max-width: 1385px;
+}
+
+.space {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+}
+
+.space__logo-link {
+  display: inline-block;
+}
+
+.space__list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  width: 830px;
+  padding: 38px 0;
+  background-color: rgba(255, 255, 255, 0.04);
+  text-align: center;
+}
+.space__list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -413px;
+  margin: auto 0;
+  width: 443px;
+  height: 1px;
+  background-color: #383E47;
+}
+
+.space__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: white;
+  position: relative;
+  letter-spacing: 2.7px;
+  font-family: "Barlow Condensed";
+}
+.space__link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -38px;
+  background-color: white;
+  transition: all 0.2s linear;
+  opacity: 0;
+}
+.space__link:hover::before {
+  opacity: 1;
+}
+
+.technology__hero-section {
+  padding: 76px 0 214px 0;
+  background-image: url(../../images/technology-hero-img.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.technology__hero-title-wrapper {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.technology__hero-title-number {
+  opacity: 0.25;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: white;
+  font-family: "Barlow";
+}
+
+.technology__hero-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: white;
   font-family: "Barlow";
 }
 
@@ -681,5 +745,4 @@ body {
   margin-bottom: 0;
   color: rgb(208, 214, 249);
   font-family: "Barlow";
-
 }/*# sourceMappingURL=main.css.map */
