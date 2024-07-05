@@ -21,6 +21,21 @@
 
   font-weight: 400;
   src: url("../fonts/barlow-v12-latin-regular.woff2") format("woff2");
+
+}
+@font-face {
+  font-display: swap;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/bellefair-v14-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/barlow-condensed-v12-latin-regular.woff2") format("woff2");
 }
 * {
   margin: 0;
@@ -37,9 +52,14 @@ body {
   background-image: url(../../images/crew-bg.png);
   background-repeat: no-repeat;
   background-size: 100%;
-
   font-family: "Barlow", sans-serif;
-
+  font-family: "Bellefair", serif;
+  font-family: "Barlow Condensed", sans-serif;
+  height: 100vh;
+  background-image: url(../../images/moon-bg.jpg);
+  background-size: 100% 100%;
+  background-position: 100%;
+  background-repeat: no-repeat;
 }
 
 .visually-hidden {
@@ -62,6 +82,74 @@ body {
   padding: 0 20px;
 }
 
+.space-body {
+  background-image: url(../images/space-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
+}
+
+/* .moon-header {
+    padding: 40px 0 76px 0;
+} */
+.moon__header--site-logo {
+  margin-left: 55px;
+}
+
+.moon__header--content {
+  padding: 40px 0 35px 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 507px;
+}
+
+.moon__header--list {
+  width: 100%;
+  padding: 38px 0;
+  position: relative;
+  background-color: #222630;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 77px;
+}
+.moon__header--list::before {
+  content: "";
+  width: 473px;
+  height: 1px;
+  background-color: #505159;
+  position: absolute;
+  left: -425px;
+}
+
+.moon__header--item:nth-child(1) {
+  margin-left: 52px;
+  position: relative;
+}
+.moon__header--item:nth-child(1)::before {
+  content: "00";
+  position: absolute;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  color: #FFFFFF;
+  letter-spacing: 2.7px;
+  top: 0;
+  bottom: 0;
+  left: -29px;
+}
+
+.moon__header--item:nth-child(2) {
+  position: relative;
+}
+.moon__header--item:nth-child(2)::before {
+  content: "01";
+  position: absolute;
+ }
 .site-header {
   padding: 40px 0 0 55px;
 
@@ -99,6 +187,9 @@ body {
   position: absolute;
   top: 0;
   bottom: 0;
+  left: -413px;
+  margin: auto 0;
+  width: 443px;
   left: -443px;
   margin: auto 0;
   width: 473px;
@@ -113,7 +204,9 @@ body {
   text-transform: uppercase;
   margin-bottom: 0;
   color: white;
-
+  position: relative;
+  letter-spacing: 2.7px;
+  font-family: "Barlow Condensed";
   font-family: "Barlow"; /* add */
   letter-spacing: 2.7px;
 
@@ -124,6 +217,172 @@ body {
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
+  margin-bottom: 0px;
+  color: #FFFFFF;
+  letter-spacing: 2.7px;
+  top: 0;
+  bottom: 0;
+  left: -29px;
+}
+
+.moon__header--item:nth-child(3) {
+  position: relative;
+}
+.moon__header--item:nth-child(3)::before {
+  content: "02";
+  position: absolute;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  color: #FFFFFF;
+  letter-spacing: 2.7px;
+  top: 0;
+  bottom: 0;
+  left: -29px;
+}
+
+.moon__header--item:nth-child(4) {
+  position: relative;
+}
+.moon__header--item:nth-child(4)::before {
+  content: "03";
+  position: absolute;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  color: #FFFFFF;
+  letter-spacing: 2.7px;
+  top: 0;
+  bottom: 0;
+  left: -29px;
+}
+
+.moon__header--link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  margin-bottom: 64px;
+  color: #FFFFFF;
+  letter-spacing: 2.7px;
+  transition: 0.3s all;
+}
+.moon__header--link:hover::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  background-color: #D0D6F9;
+  top: 54px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.moon__wrapper--title {
+  margin-left: 39px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33.6px;
+  text-transform: uppercase;
+  margin-bottom: 64px;
+  color: #FFFFFF;
+  position: relative;
+  transition: 0.3s all;
+}
+.moon__wrapper--title::before {
+  content: "01";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -38px;
+  color: #4F5159;
+}
+
+.moon__wrapper--content {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 206px;
+}
+
+.moon__after-list {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 35px;
+}
+
+.moon__after--link {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 16px;
+  text-transform: capitalize;
+  margin-bottom: 0px;
+  color: #D0D6F9;
+  letter-spacing: 2.7px;
+  position: relative;
+  overflow: hidden;
+}
+.moon__after--link:hover::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  background-color: #D0D6F9;
+  top: 32px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.moon__after--title {
+  margin-top: 37px;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 114.6px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  color: #FFFFFF;
+}
+
+.moon__after--text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: none;
+  margin-bottom: 54px;
+  color: #D0D6F9;
+}
+
+.moon__bootom--card {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 79px;
+}
+
+.moon__bootom--distanse {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.8px;
+  text-transform: capitalize;
+  margin-bottom: 12px;
+  color: #D0D6F9;
+}
+
+.moon__bootom--speed {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: capitalize;
+  margin-bottom: 0px;
+  color: #FFFFFF;
   margin-bottom: 0;
   color: white;
   margin-right: 11px;
@@ -141,7 +400,6 @@ body {
 .space__link:hover::before {
   opacity: 1;
 }
-
 .crew-body {
   background: #0B0D17;
   background-image: url(../../images/crew-bg.png);
@@ -166,6 +424,82 @@ body {
   font-family: "Barlow";
   letter-spacing: 4.72px;
 }
+.space-hero-section {
+  padding-top: 170px;
+}
+
+.space-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+}
+
+.explore__content-wrapper {
+  max-width: 450px;
+}
+
+.explore__text {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  color: #D0D6F9;
+}
+
+.explore__title {
+  font-weight: 400;
+  font-size: 151px;
+  line-height: 171px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  color: white;
+  font-family: "Bellefair";
+}
+
+.explore__btm-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: none;
+  margin-bottom: 0px;
+  color: #D0D6F9;
+}
+
+.explore__bg {
+  width: 274px;
+  height: 274px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: white;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.explore__bg::before {
+  content: "";
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: transparent;
+  transition: all 0.3s linear;
+  background-color: rgba(255, 255, 255, 0.09);
+  transform: scale(0.5);
+}
+.explore__bg:hover::before {
+  transform: scale(1);
+}
+
+.explore__name {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  color: #0B0D17;
+  font-family: "Bellefair";
 body {
   height: 100vh;
   background-image: url(../../images/technology-hero-bg-img.png);
