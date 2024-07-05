@@ -54,17 +54,6 @@
     }
     }
 
-
-/* Techno */
-body {
-    height: 100vh;
-    background-image: url(../../images/technology-hero-bg-img.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-}
-
 .technology__hero-section {
     padding: 76px 0 214px 0;
     background-image: url(../../images/technology-hero-img.png);
@@ -159,5 +148,4 @@ body {
     @include textStyle($FW:400,$FS:18px,$LH:32px,$CASE:0,$MB:0,$CLR:rgb(208, 214, 249));
     font-family: 'Barlow';
 }
-
 

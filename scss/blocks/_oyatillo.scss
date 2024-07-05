@@ -106,8 +106,3 @@
     @include textStyle($FW:400,$FS:32px,$LH:36px,$CASE:uppercase,$MB:0px,$CLR:#0B0D17);
     font-family: 'Bellefair';
 }
-
-@media only screen and (max-width:1000px){
-    .space-body{
-}
-}

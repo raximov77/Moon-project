@@ -500,13 +500,6 @@ body {
   margin-bottom: 0px;
   color: #0B0D17;
   font-family: "Bellefair";
-body {
-  height: 100vh;
-  background-image: url(../../images/technology-hero-bg-img.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
 }
 
 .technology__hero-section {
