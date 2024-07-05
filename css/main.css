@@ -1,9 +1,23 @@
 @font-face {
-  font-display: swap;
-  font-family: "Barlow";
+  font-family: "Bellefair";
+  src: url("../fonts/Bellefair-Regular.woff2") format("woff2"), url("../fonts/Bellefair-Regular.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/barlow-v12-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+}
+@font-face {
+  font-family: "Barlow";
+  src: url("../fonts/Barlow-Regular.woff2") format("woff2"), url("../fonts/Barlow-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Barlow";
+  src: url("../fonts/Barlow-Bold.woff2") format("woff2"), url("../fonts/Barlow-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 * {
   margin: 0;
@@ -15,6 +29,11 @@
 
 body {
   font-family: "Barlow" sans-serif;
+  font-family: "Bellafair" serif;
+  background: #0B0D17;
+  background-image: url(../../images/crew-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .visually-hidden {
@@ -35,4 +54,154 @@ body {
   max-width: 1110px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.site-header {
+  padding: 40px 0 0 55px;
+  font-family: "Barlow";
+}
+
+.space {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+}
+
+.space__logo-link {
+  display: inline-block;
+}
+
+.space__list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  width: 830px;
+  padding: 38px 0;
+  background-color: rgba(255, 255, 255, 0.04);
+  text-align: center;
+}
+.space__list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -443px;
+  margin: auto 0;
+  width: 473px;
+  height: 1px;
+  background-color: #383E47;
+}
+
+.space__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: white;
+  position: relative;
+}
+.space__link > span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: white;
+  margin-right: 11px;
+}
+.space__link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -38px;
+  background-color: white;
+  transition: all 0.2s linear;
+  opacity: 0;
+}
+.space__link:hover::before {
+  opacity: 1;
+}
+
+.crew-body {
+  background: #0B0D17;
+  background-image: url(../../images/crew-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.crew {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 81px;
+}
+
+.crew__title {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  margin-bottom: 84px;
+  color: white;
+  font-family: "Barlow";
+  letter-spacing: 4.72px;
+}
+
+.crew__title span {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: white;
+  font-family: "Barlow" serif;
+  letter-spacing: 4.72px;
+  opacity: 25%;
+  padding-right: 24px;
+}
+
+.crew__text-wrapper h2 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 37px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: white;
+  font-family: "Bellafair" serif;
+  opacity: 50%;
+}
+
+.crew__text-wrapper h3 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 64px;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+  color: white;
+  font-family: "Bellafair";
+}
+
+.crew__text-wrapper p {
+  width: 444px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  text-transform: capitalize;
+  margin-bottom: 90px;
+  color: #D0D6F9;
+  font-family: "Barlow";
+}
+
+.crew__text-wrapper img {
+  margin-bottom: 44px;
+}
+
+.crew__img-wrapper {
+  margin-top: 20px;
+  margin-left: 137px;
 }/*# sourceMappingURL=main.css.map */
