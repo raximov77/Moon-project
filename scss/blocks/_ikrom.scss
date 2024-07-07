@@ -157,6 +157,9 @@
     @include textStyle($FW:400,$FS:18px,$LH:32px,$CASE:0,$MB:0,$CLR:rgb(208, 214, 249));
     font-family: 'Barlow';
 }
+.res-img {
+    display: none;
+}
 
 
 /* Tablet start */
@@ -168,9 +171,6 @@
     .space__link {
         @include textStyle($FW:400,$FS:14px,$LH:17px,$CASE:uppercase,$MB:0,$CLR:$white-color);
         letter-spacing: 2.36px;
-    }
-    .space__logo-link {
-        
     }
     .space__list {
         position: relative;
@@ -230,5 +230,16 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .technology__hero-content-text-first {
+        @include textStyle($FW:400,$FS:14px,$LH:17px,$CASE:uppercase,$MB:0,$CLR:rgb(208, 214, 249));
+    }
+    .technology__hero-content-title {
+        margin: 9px 0 16px 0;
+        @include textStyle($FW:400,$FS:24px,$LH:28px,$CASE:uppercase,$MB:0,$CLR:rgb(208, 214, 249));
+    }
+    .technology__hero-content-text {
+        width: 327px;
+        @include textStyle($FW:400,$FS:15px,$LH:25px,$CASE:0,$MB:0,$CLR:rgb(208, 214, 249));
     }
 }

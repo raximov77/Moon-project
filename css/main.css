@@ -755,6 +755,10 @@ body {
   font-family: "Barlow";
 }
 
+.res-img {
+  display: none;
+}
+
 /* Tablet start */
 @media only screen and (max-width: 768px) {
   .site-header {
@@ -839,5 +843,31 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .technology__hero-content-text-first {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: rgb(208, 214, 249);
+  }
+  .technology__hero-content-title {
+    margin: 9px 0 16px 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: rgb(208, 214, 249);
+  }
+  .technology__hero-content-text {
+    width: 327px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-transform: 0;
+    margin-bottom: 0;
+    color: rgb(208, 214, 249);
   }
 }/*# sourceMappingURL=main.css.map */
