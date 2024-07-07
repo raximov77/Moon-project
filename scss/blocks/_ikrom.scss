@@ -54,7 +54,15 @@
         opacity: 1;
     }
     }
+    .header-hamburger-btn {
+        display: none;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
 
+
+    /* Technology */
 .technology__hero-section {
     padding: 76px 0 214px 0;
     background-image: url(../../images/technology-hero-img.png);
@@ -150,3 +158,77 @@
     font-family: 'Barlow';
 }
 
+
+/* Tablet start */
+@media only screen and (max-width:768px){
+    .site-header {
+        padding: 24px 0  40px 40px;
+        margin: 0 auto;
+    }
+    .space__link {
+        @include textStyle($FW:400,$FS:14px,$LH:17px,$CASE:uppercase,$MB:0,$CLR:$white-color);
+        letter-spacing: 2.36px;
+    }
+    .space__logo-link {
+        
+    }
+    .space__list {
+        position: relative;
+        @include display($items:center,$space:center,$gap:37px);
+        width: 830px;
+    }
+}
+
+
+/* Mobile start */
+@media only screen and (max-width:600px){
+    .site-header {
+        padding: 24px 24px 0 24px;
+        margin: 0 auto;
+    }
+    .space__list {
+        display: none;
+    }
+    .header-hamburger-btn {
+        display: block;
+    }
+    .technology__hero-section {
+        padding: 69px 0 81px 0;
+        background-image: none;
+    }
+    .technology__hero-title-wrapper {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+    }
+    .technology__hero-title-number, .technology__hero-title {
+        @include textStyle($FW:400,$FS:16px,$LH:19px,$CASE:0,$MB:0,$CLR:0);
+        text-align: center;
+    }
+    .technology__hero-content-wrapper {
+        padding-top: 137px;
+        
+        width: 327px;
+        margin: 0 auto;
+        @include display($items:center,$space:center,$gap:26px);
+        flex-direction: column;
+        text-align: center;
+    }
+    .technology__hero-number {
+        @include display($items:center,$space:space-between,$gap:32px); 
+        flex-direction: column;
+    }
+    .technology__hero-item  {
+        display: flex;
+    }
+    .technology__hero-number-list {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+    .technology__hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
